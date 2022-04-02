@@ -16,9 +16,109 @@
   </head>
   <body>
     <div class="container-fluid mx-0 px-0">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="opacity: 0.85;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt="logo" class="img-fluid" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2"><a class="nav-link active" href="#about-kerala">About Kerala</a></li>
+              <li class="nav-item me-2"><a class="nav-link active" href="#explore-kerala">Explore Kerala</a></li>
+              <li class="nav-item me-2"><a class="nav-link active" href="#where-to-go">Where To Go</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#things-to-do">Things To Do</a></li>
+            </ul>  
+            <hr/>
+            <div class="social-icons">
+              <i class="fa fa-youtube me-3" style="color: #fc001a;"></i>
+              <i class="fa fa-facebook me-3" style="color: #1877f2;"></i>
+              <i class="fa fa-twitter me-3" style="color: #1d9bf0;"></i>
+              <i class="fa fa-instagram me-3" style="color: #e55b4e;"></i>
+              <i class="fa fa-whatsapp me-5" style="color: #128c7e;"></i>
+            </div>
+            <hr/>
+            <div>
+              <a href="sign-in.html" target="_blank" class="btn btn-outline-success me-2">Sign-in</a>
+              <a href="sign-up.html" target="_blank" class="btn btn-success">Sign-up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- /navbar -->
+
+      <!-- explore kerala scroll -->
+      <section id="explore-kerala-section" class="container-fluid mx-auto p-4 text-center">
+        <!-- <h2 class="display-5 text-center mb-5">Top Destinations</h2> -->
+        <div class="container mt-5 pt-4 mb-2">
+          <!-- jssor slider -->
+          <div id="jssor_1" style="position:relative; margin:0 auto; top:0px; left:0px; width:980px; height:100px; 
+            overflow:hidden; visibility:hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin" style="position:absolute; top:0px; left:0px; width:100%; height:100%;
+              text-align:center; background-color:rgba(0,0,0,0.7);">
+              <img style="margin-top:-19px; position:relative; top:50%; width:38px; height:38px;" src="image/spin.svg" />
+            </div>
+            <div data-u="slides" style="cursor:default; position:relative; top:0px; left:0px; width:980px; height:100px; overflow:hidden;">
+              <div>
+                <img data-u="image" src="image/img-1.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">munnar</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-2.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">arthunkal church</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-3.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">ranipuram</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-4.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">neelakurinji</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-5.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">beypore</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-6.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">silent valley</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-7.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">kuthiramalika palace</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-8.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">kanakakkunnu palace</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-9.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">athirappilly</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-10.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">vagamon</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-11.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">bekal fort</span>
+              </div>
+              <div>
+                <img data-u="image" src="image/img-12.jpg" />
+                <span class="img-caption text-center text-capitalize py-1">aleppey</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /jssor slider -->
+      </section>      
+      
       <!-- explore kerala -->
-      <section id="explore-kerala-page" class="container pt-4">
-        <h2 class="display-5 text-center mb-5">Explore Kerala</h2>
+      <section id="explore-kerala-page" class="container">
+        <!-- <h2 class="display-5 text-center mb-5">Explore Kerala</h2> -->
         <!-- image cards -->
         <!-- thiruvananthapuram -->
         <div class="card mb-3">
@@ -232,74 +332,7 @@
         </div>
         <!-- /image cards -->   
       </section>       
-      <!-- /explore kerala -->     
-        
-      <!-- top destinations -->
-      <section id="explore-kerala-section" class="container-fluid mx-auto p-4 text-center">
-        <h2 class="display-5 text-center mb-5">Top Destinations</h2>
-        <div class="container mb-5">
-          <!-- jssor slider -->
-          <div id="jssor_1" style="position:relative; margin:0 auto; top:0px; left:0px; width:980px; height:100px; 
-            overflow:hidden; visibility:hidden;">
-            <!-- Loading Screen -->
-            <div data-u="loading" class="jssorl-009-spin" style="position:absolute; top:0px; left:0px; width:100%; height:100%;
-              text-align:center; background-color:rgba(0,0,0,0.7);">
-              <img style="margin-top:-19px; position:relative; top:50%; width:38px; height:38px;" src="image/spin.svg" />
-            </div>
-            <div data-u="slides" style="cursor:default; position:relative; top:0px; left:0px; width:980px; height:100px; overflow:hidden;">
-              <div>
-               <img data-u="image" src="image/img-1.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">munnar</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-2.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">arthunkal church</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-3.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">ranipuram</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-4.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">neelakurinji</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-5.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">beypore</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-6.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">silent valley</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-7.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">kuthiramalika palace</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-8.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">kanakakkunnu palace</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-9.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">athirappilly</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-10.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">vagamon</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-11.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">bekal fort</span>
-              </div>
-              <div>
-               <img data-u="image" src="image/img-12.jpg" />
-               <span class="img-caption text-center text-capitalize py-1">aleppey</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /jssor slider -->
-      </section>      
+      <!-- /explore kerala -->             
       
       <footer class="pt-3 pb-1 text-center fw-bold">
         <p>All Rights Reserved &copy; <a href="index.html" class="text-success text-decoration-none">Kerala Tourism</a></p>
