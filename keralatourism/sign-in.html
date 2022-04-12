@@ -7,28 +7,30 @@
       <title>Kerala - God's Own Country</title>
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/style.css" />
-  </head>
+      <script src="js/signinValidation.js"></script>
+    </head>
   <body id="sign-in">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-4 bg-light shadow px-5 my-5 pb-5 rounded" style="opacity:0.95">
-          <form>
+          <!-- <form> -->
             <div class="text-center">
               <img class="img-fluid my-5" src="image/sign-in-logo.png" alt="logo" height="45%" width="45%" />
             </div>
             <div class="mb-2">
-              <label for="exampleInputEmail1" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" />
             </div>
             <div class="mb-2">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" required>
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" />
+              <small id="password-status"></small>
             </div>
             <div class="mb-4 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              <input type="checkbox" class="form-check-input" id="checkbox">
+              <label class="form-check-label" for="checkbox">Remember me</label>
             </div>
-            <button type="submit" class="btn btn-primary">Sign In</button>
+            <input type="submit" class="btn btn-primary" value="Sign In" />
             <div class="mt-1">
               <a href="#" class="text-decoration-none">Forgot Password</a>
             </div>
@@ -39,7 +41,7 @@
             <div class="mt-1">
               <a href="sign-up.html" class="btn btn-success">Create New Account</a>
             </div>
-          </form>    
+          <!-- </form> -->
         </div>
       </div>
     </div>
