@@ -1,4 +1,4 @@
-function validateLogin(){    
+      function validateLogin(){    
         var email = document.getElementById("email").value
         var password = document.getElementById("password").value
     
@@ -19,5 +19,5 @@ function validateLogin(){
           document.getElementById("password-status").style.color = "red"
         }
         else
-          window.location = "./index.html";
+          window.location = "/index.html";
       }
