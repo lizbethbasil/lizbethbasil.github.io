@@ -58,8 +58,16 @@
         else if(!emailformat.test(email))
           document.getElementById("email").style.border = "1px solid red"    
 
-        else if(password.trim() == '') 
-          document.getElementById("password").style.border = "1px solid red"
+        else if(password.trim() == ''){
+          if(!emailformat.test(email)){
+            document.getElementById("email").style.border = "1px solid red"                
+            document.getElementById("password").style.border = "1px solid red"
+          }
+          else{
+            document.getElementById("email").style.border = "1px solid red"                
+            document.getElementById("password").style.border = "1px solid red"
+          }
+        }
         else if(!passwordformat.test(password)){
           document.getElementById("password").style.border = "1px solid red"
           document.getElementById("password-status").innerHTML = "Password should have a minimum length of 8 characters, an uppercase, lowercase and a number"
