@@ -7,7 +7,7 @@
       <title>Kerala - God's Own Country</title>
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/style.css" />
-  </head>
+    </head>
   <body id="sign-up">
     <div class="container">
       <div class="row justify-content-center">
@@ -38,7 +38,7 @@
             </div>
             <div class="mb-2">
               <label for="inputPassword1" class="form-label">Enter Password</label>
-              <input type="password" class="form-control" id="password1" />
+              <input type="password" class="form-control" id="password1" onkeydown="validatePassword()" />
               <small id="password1-status"></small>
             </div>
             <div class="mb-2">
@@ -61,6 +61,7 @@
         </div>
       </div>
     </div>
+
     <script>
       function validateRegister(){
         var firstname = document.getElementById("firstName").value;
@@ -123,6 +124,26 @@
         }
         else{
           window.location = "https://lizbethbasil.github.io/keralatourism/index.html";
+        }
+      }
+
+      function validatePassword(){
+        var password = document.getElementById("password1").value;
+        var passwordformat = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+        
+        if(password.length = 0)
+          document.getElementById("password1-status").innerHTML = "";
+        else if(password.length < 10 && password.length >= 8 && (passwordformat.test(password))){
+          document.getElementById("password1-status").innerHTML = "Weak Password";
+          document.getElementById("password1-status").style.color = "red";
+        }
+        else if(password.length <= 15 && password.length >= 10 && passwordformat.test(password)){
+          document.getElementById("password1-status").innerHTML = "Medium Password"
+          document.getElementById("password1-status").style.color = "orange";
+        }
+        else if(password.length > 15 && passwordformat.test(password)){
+          document.getElementById("password1-status").innerHTML = "Strong Password"
+          document.getElementById("password1-status").style.color = "green"
         }
       }
     </script>
