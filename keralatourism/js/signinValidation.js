@@ -11,7 +11,6 @@ function validateLogin(){
           document.getElementById("email").style.border = "1px solid red"    
         else if(password.trim() == ''){
           document.getElementById("password").style.border = "1px solid red"
-          document.getElementById("email").value = ""
         }
         else if(emailformat.test(email) && !passwordformat.test(password)){
           document.getElementById("email").style.border = "none"
