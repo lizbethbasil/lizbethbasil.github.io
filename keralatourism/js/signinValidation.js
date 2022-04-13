@@ -9,8 +9,10 @@ function validateLogin(){
           document.getElementById("email").style.border = "1px solid red"
         else if(!emailformat.test(email))
           document.getElementById("email").style.border = "1px solid red"    
-        else if(password.trim() == '')
+        else if(password.trim() == ''){
           document.getElementById("password").style.border = "1px solid red"
+          document.getElementById("email").style.border = "none"
+        }
         else if(emailformat.test(email) && !passwordformat.test(password)){
           document.getElementById("email").style.border = "none"
           document.getElementById("password").style.border = "1px solid red"
