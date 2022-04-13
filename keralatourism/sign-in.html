@@ -66,14 +66,6 @@
           document.getElementById("password-status").innerHTML = "Password should have a minimum length of 8 characters, an uppercase, lowercase and a number"
           document.getElementById("password-status").style.color = "red"
         }
-        else if(passwordformat.test(password) && email.trim() == ''){
-          document.getElementById("email").style.border = "1px solid red"
-          document.getElementById("password").style.border = "none"
-        }
-        else if(passwordformat.test(password) && !emailformat.test(email)){
-          document.getElementById("email").style.border = "1px solid red"
-          document.getElementById("password").style.border = "none"
-        }
         else
           window.location = "https://lizbethbasil.github.io/keralatourism/index.html"
         }
