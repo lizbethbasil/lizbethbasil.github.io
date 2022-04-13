@@ -57,9 +57,8 @@
           document.getElementById("email").style.border = "1px solid red"
         else if(!emailformat.test(email))
           document.getElementById("email").style.border = "1px solid red"    
-        else if(emailformat.test(email))
-          document.getElementById("email").style.border = "none"    
-        else if(password.trim() == '') 
+
+        else if(password.trim() == '' && emailformat.test(email)) 
           document.getElementById("password").style.border = "1px solid red"
         else if(!passwordformat.test(password)){
           document.getElementById("password").style.border = "1px solid red"
