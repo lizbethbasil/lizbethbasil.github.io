@@ -62,8 +62,7 @@
       </div>
     </div>
     <script>
-      function validateRegister(){    
-        // update sign-up.html
+      function validateRegister(){
         var firstname = document.getElementById("firstName").value;
         var lastname = document.getElementById("lastName").value;
         var email = document.getElementById("email").value;
@@ -111,7 +110,7 @@
           document.getElementById("password1-status").innerHTML = "Password should have a minimum length of 8 characters, an uppercase, lowercase and a number";
           document.getElementById("password1-status").style.color = "red";
         }
-        else if((nameformat.test(firstname)) && (nameformat.test(lastname)) && (emailformat.test(email)) && (phoneformat.test(phoneno)) && (passwordformat.test(password1)) && ((password2.trim() == "") || (!password1.test(password2)))){
+        else if((nameformat.test(firstname)) && (nameformat.test(lastname)) && (emailformat.test(email)) && (phoneformat.test(phoneno)) && (passwordformat.test(password1)) && ((password2.trim() == "") || (password1 != password2))){
           document.getElementById("firstName").style.border = "none";
           document.getElementById("lastName").style.border = "none";
           document.getElementById("email").style.border = "none";
@@ -123,8 +122,6 @@
           document.getElementById("password2-status").style.color = "red";
         }
         else{
-          document.getElementById("password2-status").innerHTML = "Passwords match";
-          document.getElementById("password2-status").style.color = "green";
           window.location = "https://lizbethbasil.github.io/keralatourism/index.html";
         }
       }
