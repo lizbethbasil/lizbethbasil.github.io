@@ -8,23 +8,30 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body id="my-to-do-list" class="container-fluid m-0 p-0">
-        <header>
-            <div class="container-fluid bg-primary bg-gradient">
-                <div class="d-flex justify-content-center py-1">
-                    <button class="btn text-white" onclick="location.replace('index.html')">My To-Do List</button>
-                    <button class="btn text-white" onclick="location.replace('login.html')">Log Out</button>
-                </div>
+    <body id="log-in" class="m-0 p-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 shadow px-5 my-5 py-5 rounded">
+            <div class="text-center">
+              <img class="img-fluid mt-4 mb-2" src="image/logo.png" alt="logo" height="30%" width="30%" />
+              <h2 class="text-danger">My To-Do List</h2>
+              <br><br>
             </div>
-        </header>
-        <section class="container my-5">
-            <h2 class="mb-4">My To-Do List</h2>
-            <span id="load-data"></span>
-        </section>
-        <script src="js/load-data.js"></script>
-        <script src="js/message.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="username" class="form-control" id="username" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" />
+              <small id="status"></small>
+            </div>
+            <div class="my-4 pb-4">
+              <input type="submit" class="btn btn-primary" value="Sign In" onclick="validateLogin(redirect)" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/login.js"></script>
+  </body>
 </html>
