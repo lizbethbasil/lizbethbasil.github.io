@@ -3,6 +3,8 @@ const authorsRouter = express.Router();
 // const authors = require('../data/authors');
 const authordata = require('../model/AuthorModel');
 
+
+
 //router to render authors page
 authorsRouter.get('/',function(req,res){
 
@@ -16,11 +18,16 @@ authorsRouter.get('/',function(req,res){
     })
 })
 
+
+
 //router to render add author page
 authorsRouter.get('/addauthor',function(req,res){
     res.render('addauthor',{});
 
 });
+
+
+
 
 //router to add author
 authorsRouter.post('/add', function (req, res) {
@@ -37,6 +44,9 @@ authorsRouter.post('/add', function (req, res) {
 
 })
 
+
+
+
 //router for single author
 authorsRouter.get('/:id',function(req,res){
     const id = req.params.id;
@@ -46,8 +56,12 @@ authorsRouter.get('/:id',function(req,res){
                     author
                 })
 
-            })    
+            })
+    
 });
+
+
+
 
 //router to delete author
 authorsRouter.post('/delete', function (req, res) {
@@ -56,12 +70,17 @@ authorsRouter.post('/delete', function (req, res) {
 
     authordata.findOneAndDelete({ _id: id })
         .then(function () {
+
             res.redirect('/authors')
+
         })  
 })
 
+
+
 //router to edit author
 authorsRouter.post('/edit', function (req, res) {
+
     authordata.findById(req.body.id, function(err, data){
         if (err) {
             throw err;
@@ -71,6 +90,9 @@ authorsRouter.post('/edit', function (req, res) {
         }
     })
 })
+
+
+
 
 //router to update author
 authorsRouter.post('/update', function (req, res) {
@@ -85,7 +107,13 @@ authorsRouter.post('/update', function (req, res) {
         else {
             res.redirect("/authors")
         }
+
     })  
 })
+
+
+
+
+
 
 module.exports = authorsRouter;

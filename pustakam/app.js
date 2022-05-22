@@ -3,8 +3,22 @@ const path = require ('path');
 const cors = require('cors');
 
 const nav= [
-    {link:"/books", title:"Books"}, {link:"/authors", title:"Authors"}, 
-    {link:"/addbook", title:"Add Book"}, {link:"/addauthor", title:"Add Author"}
+    {
+        link:"/books",
+        title:"Books"
+    },
+    {
+        link:"/authors",
+        title:"Authors"
+    },
+    {
+        link:"/addbook",
+        title:"Add Book"
+    },
+    {
+        link:"/addauthor",
+        title:"Add Author"
+    }
 ]
 
 const loginRouter = require('./src/routes/loginroute');
@@ -14,10 +28,12 @@ const homeRouter = require('./src/routes/homerouter');
 const booksRouter = require('./src/routes/booksroute');
 const authorsRouter = require('./src/routes/authorsroute');
 
-const app = new express;
+const app = new express; 
+
 
 app.set('views','./src/views'); 
 app.set('view engine','ejs'); 
+
 
 // app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.urlencoded({ extended : true}));
@@ -30,10 +46,16 @@ app.use('/home',homeRouter);
 app.use('/books',booksRouter); 
 app.use('/authors',authorsRouter); 
 
+
+
 app.get('/',function(req,res){
     // res.render('index',{});
     res.render('index',{nav});
 });
+
+
+
+
 
 app.listen(5000,()=>{
     console.log("Server Ready on 5000");

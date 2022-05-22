@@ -3,10 +3,13 @@ const signupRouter = express.Router();
 const user = require('../data/user');
 
 signupRouter.get('/',function(req,res){
-    res.render('signup',{});    
+
+    res.render('signup',{});
+    
 })
 
 signupRouter.get("/adduser",function(req,res){
+    
     var newuser = {
         "uid":req.param("uid"),
         "pwd":req.param("pwd")
