@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FISHQCheQ - A SYSTEM TO ASSESS THE QUALITY OF FISH</title>
+
+        <!-- default css files -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/CIFTWEBORGCSS.css" type="text/css" media="all">
+        <!-- default css files -->
+
+        <!--web font-->
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=
+              cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=
+              latin-ext,vietnamese" rel="stylesheet">
+        <!--web font-->
+
+        <script  type="text/javascript" src="js/jquery3.3.1.min.js"></script>
+        <script  type="text/javascript" src="js/fqi.js"></script>
+	</head>
+
+    <body>
+        <div id="home" class="container">
+            <!-- code for responsive image -->
+            <div class="logo">
+                <img class="img-responsive" src="img/logoorg.png" alt="Logo"> 
+            </div> 
+        </div> 
+        <div class="clearfix"> </div>
+        <div class="container padding_top_50">
+            <div align="center">
+            <div id="menu1">
+                <ul>
+                    <li>
+                        <a href="index.html">Fish Quality Index (FQI)</a>
+                    </li>
+                    <li>
+                        <a href="description.html">Instructions for FQI</a>
+                    </li>
+                    <li class="active">
+                        <a href="valuepage.html">Assessment of FQI</a>
+                    </li>
+                </ul>
+            </div>
+
+                <!--<div id="head" align="left">Assessment of FQI</div><br>-->
+                <div align="center">
+                    <div id="table1" class="table-responsive table-hower">
+                        <table border="0" cellpadding="0" cellspacing="0" class="table table-bordered" id="checkedfields">
+                            <th style="color: #0ac876" ><center><label for="NO">NO</label></center>
+                            </th>
+                            <th style="color: #0ac876"><center><label for="FACTOR"> FACTOR</label></center>
+                            </th>
+                            <th style="color: #0ac876"><center><label for="Qualitycharacteristics"  >QUALITY CHARACTERISTICS</label></center>
+                            </th>
+                            <th style="color: #0ac876" ><center><label for="Demerit Point"  >DEMERIT POINT</label></center>
+                            </th>
+                            <th style="color: #0ac876" ><center><label for="Select Demerit Points"  >SELECT DEMERIT POINTS</label></center>
+                            </th>
+                            <tr>
+                                <th style="color: #0ac876" colspan="5">APPEARANCE OF OUTER SURFACE</th>
+                            </tr>
+                            <tr>
+                                <td><label> 1</label></td>
+                                <td><label for="Appearance of Surface"> APPEARANCE OF SURFACE</label></td>
+                                <td>
+                                    <ul>
+                                        <li><a>Very Bright</a></li>
+                                        <li><a>Bright</a></li>
+                                        <li><a>Slight Dull</a></li>
+                                        <li><a>Dull</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul class="score">
+
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf1" id="slf1">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                            <option values="4">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> 2</label></td>
+                                <td><label for="SKIN" >SKIN</label></td>
+                                <td>
+                                    <ul>
+                                        <li><a>Firm</a></li>
+                                        <li><a>Soft</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf2" align="center" id="slf2">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label> 3</label></td>
+                                <td><label for="SCALES" >SCALES</label></td>
+                                <td>
+                                    <ul>
+                                        <li><a>Firm</a></li>
+                                        <li><a>Slight Loose</a></li>
+                                        <li><a>Loose</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf3" id="slf3">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label> 4</label></td>
+                                <td><label for="SLIME" >SLIME</label></td>
+                                <td>
+                                    <ul>
+                                        <li><a>No Slime</a></li>
+                                        <li><a>Slightly Slimy</a></li>
+                                        <li><a>Slimy</a></li>
+                                        <li><a>Very Slimy</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+
+                                    <div id="selectv">
+                                        <select name="slf4" id="slf4">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                            <option values="4">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> 5</label></td>
+                                <td><label for="STIFFNESS" > STIFFNESS</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Prerigor</a></li>
+                                        <li><a>Rigor</a></li>
+                                        <li><a>Postrigor</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf5" id="slf5">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="color: #0ac876" colspan="5">EYES</th></tr>
+                            <tr>
+                                <td><label> 6</label></td>
+                                <td><label for="CLARITY" >CLARITY</label>   </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Clear</a></li>
+                                        <li><a>Slight Cloudy</a></li>
+                                        <li><a>Cloudy</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf6" id="slf6">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+
+                            <tr>
+                                <td><label> 7</label></td>
+                                <td><label for="SHAPE" >SHAPE</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Normal</a></li>
+                                        <li><a>Slightly Sunken</a></li>
+                                        <li><a>Sunken</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf7" id="slf7">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> 8</label></td>
+                                <td><label for="IRIS" >IRIS</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Visible</a></li>
+                                        <li><a>Not Visible</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf8" id="slf8">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> 9</label></td>
+                                <td><label for="BLOOD" >BLOOD</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>No Blood</a></li>
+                                        <li><a>Slight Blood</a></li>
+                                        <li><a>Very Blood</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf9" id="slf9">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="color: #0ac876" colspan="5">GILLS</th>
+                            </tr>
+
+                            <tr>
+                                <td><label> 10</label></td>
+                                <td><label for="COLOUR" >COLOUR</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Characterisic</a></li>
+                                        <li><a>Slightly dark / Slightly faded</a></li>
+                                        <li><a>Very Dark / Very Faded </a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf10" id="slf10">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> 11</label></td>
+                                <td><label for="MUCUS" >MUCUS</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Absent</a></li>
+                                        <li><a>Moderate</a></li>
+                                        <li><a>Excessive</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf11" id="slf11">
+                                            <option values="0">Select</option>
+                                            <option values=1>0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> 12</label></td>
+                                <td><label for="SMELL" > ODOUR</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Fresh</a></li>
+                                        <li><a>Fishy</a></li>
+                                        <li><a>Stale</a></li>
+                                        <li><a>Spoiled</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf12" id="slf12">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                            <option values="4">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="color: #0ac876" colspan="5">BELLY</th>
+                            </tr>
+                            <tr>
+                                <td><label> 13</label></td>
+                                <td><label for="DISCOLORATION" >DISCOLORATION</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Absent</a></li>
+                                        <li><a>Detectable</a></li>
+                                        <li><a>Moderate</a></li>
+                                        <li><a>Excessive</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf13" id="slf13">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                            <option values="4">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label> 14</label></td>
+                                <td><label for="FIRMNES" >FIRMNESS</label>  </td>
+
+                                <td>
+                                    <ul>
+                                        <li><a>Firm</a></li>
+                                        <li><a>Soft</a></li>
+                                        <li><a>Burst</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf14" id="slf14">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="color: #0ac876" colspan="5">VENT</th>
+                            </tr>
+                            <tr>
+                                <td><label> 15</label></td>
+                                <td><label for="Condition">CONDITION</label>  </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Normal</a></li>
+                                        <li><a>Slightly Broken</a></li>
+                                        <li><a>Excessive Open</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf15" id="slf15">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> 16</label></td>
+                                <td><label for="SMELL" >ODOUR</label>   </td>
+                                <td>
+                                    <ul>
+                                        <li><a>Fresh</a></li>
+                                        <li><a>Neutral</a></li>
+                                        <li><a>Fishy</a></li>
+                                        <li><a>Spoiled</a></li>
+                                    </ul>
+                                </td>
+
+                                <td>
+                                    <ul class="score">
+                                        <li><a>0</a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div id="selectv">
+                                        <select name="slf16" id="slf16">
+                                            <option values="0">Select</option>
+                                            <option values="1">0</option>
+                                            <option values="2">1</option>
+                                            <option values="3">2</option>
+                                            <option values="4">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><p>
+                                        <button class="btn btn-success btn-block" id="Result12" onclick="CalculatedFQI();">Compute Fish Quality Index</button>
+                                    </p>
+                                </td>
+                                <td>
+                            <center>
+                                <label id="Result1">Result : </label>
+                                <label id="result21"></label>
+                            </center>
+
+                            </td>
+                            <td colspan="2">
+                            <center>
+                                <label id="Final"></label>
+                                <label id="Final2"></label>
+                            </center>
+
+                            </td>
+                            </tr>
+                        </table>
+                        <div id="fishindex">
+                            <a>Note :
+                                <label id ="Note1"> If any of the quality attribute is found to be irrelevant for the quality /
+                                    freshness assessment of a particular species of fish, please select always 0 
+                                    from demerit score sheet. This would not affect the final FQI score.
+                                </label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/jquery3.3.1.min.js"></script>
+        <script src="js/fqi.js"></script>
+
+        <div id="footer">
+            <div class="container-fluid">
+                <div class="col-md-12 copyright">
+                    <p>All Rights Reserved &copy; 2019 ICAR - CIFT, Cochin  </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
