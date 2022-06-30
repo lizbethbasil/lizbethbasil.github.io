@@ -12,9 +12,8 @@ img.logo{
 }
 #navToggle ul li a:hover{color: #000000;}
 
-@media(min-width: 780px){
-  header h1{font-size:  64px;}
-}
+@media(min-width: 780px){header h1{font-size:  72px;}}
+@media(max-width: 779px){header h1{font-size:  52px;}}
 
 #blogSlider .card-body:hover{background-color: #dddddd;}
 
@@ -58,5 +57,4 @@ footer span.social-icons i:hover{color: #f0c700;}
 footer span.footText{font-weight: light;}
 footer span.footText:hover{padding-right: 2px;}
 
-.tabItem{display: none;}
-.tabItem:hover{display: block;}
+@media(max-width: 779px){footer{text-align: center;}}
