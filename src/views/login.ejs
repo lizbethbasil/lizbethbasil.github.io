@@ -16,7 +16,6 @@
 </head>
 <body>
 
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
 
@@ -65,18 +64,15 @@
             </div>
             <br>
 
-            <form class='col-12' action="/login/check" onsubmit="return validate()" method="GET">
-
+            <form class='col-12' action="/login/check" onsubmit="return validate()" method="POST">
+              <!-- 8. I am a form on one of the EJS pages. When I send data, the backend always misses one. Silly spelling Error -->
               <div class="form-group">
-                <input id="uid" name="uid" class='form-control' type="email" placeholder="Enter Username(email id)" id="mail" required>
+                <input id="uid" name="uid" class='form-control' type="email" placeholder="Enter Username(email id)" required>
                 <label for="email" id="feedback" style="color:red; visibility:hidden">Enter valid e-mail id</label>
 
               </div>
-
-
-
               <div class="form-group">
-                  <input id="pwd" name="pwd" class='form-control' type="password" placeholder="Enter Password" id="pwd" required>
+                  <input id="pwd" name="pwd" class='form-control' type="password" placeholder="Enter Password" required>
                   <label for="pwd" id="feedback2" style="color:red; visibility:hidden">Password should be minimum 8 characters</label>
               </div>
 

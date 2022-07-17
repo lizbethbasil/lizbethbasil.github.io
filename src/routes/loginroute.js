@@ -1,51 +1,23 @@
 const express = require('express'); 
 const loginRouter = express.Router();
-const user = require('../data/user');
+//const user = require('../data/user');
+const userdata = require('../model/UserModel');
 
 loginRouter.get('/',function(req,res){
-
     res.render('login',{});
-    
 })
 
-
-loginRouter.get("/check",function(req,res){
-    var checkuser = {
-        uid:req.param("uid"),
-        pwd:req.param("pwd")
-    };
-    
-    console.log(checkuser);
-    var flag=false;
-
-//    var flagg = user.find((e)=>{
-       for(let i=0;i<user.length;i++){
-        
-        if(checkuser.uid==user[i].uid && checkuser.pwd==user[i].pwd)
-        {
-            
-            flag=true;
-            break;
+loginRouter.post('/check', function (req, res) {
+    userdata.findOne({uid:req.body.uid, pwd: req.body.pwd}, function(err, data){
+        if (err) {
+            throw err;
         }
-        else{
-                flag=false;
-            }
-        };
-
-        console.log(flag);
-
-if(flag==true){
-    // alert("User Verified.Click to continue");
-    res.redirect("/home")
-}
-else{
-    // alert("User Verification Failed");
-    res.redirect("/signup");
-}
-
-});
-
-
-
+        else {
+            if(!data) 
+            { res.redirect("/signup");}
+            else{res.redirect("/home")}
+        }
+    })
+})
 
 module.exports = loginRouter;

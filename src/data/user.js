@@ -15,6 +15,5 @@ var users=[{
 }
 ]
 
-// point 4
-// module.exports=user;
+//4. I appear as a module. I am just an array of Objects. Someone didn't call my name properly.
 module.exports=users;

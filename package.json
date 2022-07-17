@@ -2,8 +2,6 @@
   "name": "libraryexpress",
   "version": "1.0.0",
   "description": "",
-  "comment": "point 1",
-  "main-old": "server.js",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -14,11 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./app.js"
   },
-  "author": "aiswarya",
-  "license": "ISC",
-  "engines": {
-    "node": "16.x"
-  }
+  "author": "",
+  "license": "ISC"
 }

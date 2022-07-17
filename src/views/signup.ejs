@@ -54,10 +54,7 @@
 
     <!-- Material form register -->
     <div class="card mx-auto container">
-
-
-        
-            <h3 class="card-header info-color white-text text-center py-4">
+             <h3 class="card-header info-color white-text text-center py-4">
                 <strong>Sign Up</strong>
             </h3><br>
         
@@ -65,7 +62,7 @@
             <div class="card-body px-lg-5 pt-0">
         
                 <!-- Form -->
-                <form class="text-center" action="/signup/adduser" style="color: #757575;" onsubmit="return validate()">
+                <form class="text-center" action="/signup/adduser" method="POST" style="color: #757575;" onsubmit="return validate()">
         
                     <div class="form-row">
                         <div class="col">
@@ -90,7 +87,7 @@
                     <!-- E-mail -->
                     <div class="md-form mt-0">
                         <label for="email">E-mail</label>
-                        <input id="uid" name="uid" type="email" id="email" class="form-control" required>
+                        <input id="uid" name="uid" type="email" class="form-control" required>
                         <label for="email" id="emailfeedback" style="color:red; visibility:hidden">Enter valid e-mail id.</label>
 
                     </div>
@@ -102,7 +99,7 @@
                     <!-- Password -->
                     <div class="md-form mt-0">
                         <label for="pwd">Password</label>
-                        <input id="pwd" name="pwd" type="password" id="pwd" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
+                        <input id="pwd" name="pwd" type="password" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" required>
                         <label for="pwd" id="pwdfeedback" style="color:red; visibility:hidden">Password should be minimum 8 characters</label>
         
                     </div>

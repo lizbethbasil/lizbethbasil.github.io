@@ -42,10 +42,7 @@ booksRouter.post('/add', function (req, res) {
         const book = new bookdata(item);
         book.save();
         res.redirect('/books');
-
     })
-
-
 
 //router for singlebook
 booksRouter.get('/:id',function(req,res){
@@ -109,11 +106,5 @@ booksRouter.post('/update', function (req, res) {
 
     }) 
 })
-
-
-
-
-
-
 
 module.exports = booksRouter;
