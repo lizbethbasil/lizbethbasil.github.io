@@ -20,6 +20,6 @@ export class NewauthorComponent implements OnInit {
   NewAuthor() {
     this.authorService.addAuthor(this.newauthor);
     alert("New Author Added");
-    this.router.navigate(['/']);
+    this.router.navigate(['/authorlist']);
   }
 }

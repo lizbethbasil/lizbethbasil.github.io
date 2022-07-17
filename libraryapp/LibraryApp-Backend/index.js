@@ -24,12 +24,12 @@ app.post('/newauthor', function (req, res) {
     console.log(req.body);
     var author = {
         authorName: req.body.item.authorName,
-        bestseller: req.body.item.bestseller,
+        bestSeller: req.body.item.bestSeller,
         rating: req.body.item.rating,
         imageURL: req.body.item.imageURL
     }
 
-    console.log("Hello");
+    console.log("New Author Added");
     var authors = new Authordata(author);
     authors.save();
 })
@@ -56,7 +56,7 @@ app.post('/newbook', function (req, res) {
         imageURL: req.body.item.imageURL
     }
 
-    console.log("Hello");
+    console.log("New Book Added");
     var books = new Bookdata(book);
     books.save();
 })

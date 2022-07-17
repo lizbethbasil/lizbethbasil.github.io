@@ -8,12 +8,11 @@ export class AuthorService {
 
   constructor(public http: HttpClient) { }
   getAuthor() {
-    return this.http.get('http://localhost:3000/author');
+    return this.http.get('http://localhost:5000/authorlist');
   }
 
 
   addAuthor(item: any) {
-
-    return this.http.post('http://localhost:3000/addauthor', { item }).subscribe(data => { console.log(data) });
+    return this.http.post('http://localhost:5000/newauthor', { item }).subscribe(data => { console.log(data) });
   }
 }

@@ -7,12 +7,11 @@ import { Injectable } from '@angular/core';
 export class BookService {
   constructor(public http: HttpClient) { }
   getBook() {
-    return this.http.get('http://localhost:3000/book');
+    return this.http.get('http://localhost:5000/booklist');
   }
 
 
   addBook(item: any) {
-
-    return this.http.post('http://localhost:3000/addbook', { item }).subscribe(data => { console.log(data) });
+    return this.http.post('http://localhost:5000/newbook', { item }).subscribe(data => { console.log(data) });
   }
 }
