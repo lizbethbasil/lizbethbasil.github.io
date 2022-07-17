@@ -1,0 +1,22 @@
+/* index.html */
+@media only screen and (min-width: 800px){.about{margin-bottom: 122px;}}
+
+/* footer */
+footer{background-color: #222;}
+footer ul li a{color: #999;}
+footer ul li a:hover{color: #fff;}
+footer .row a{color: #0ac876;}
+footer .row a:hover{color: #4ded30;}
+
+@media only screen and (min-width: 800px){footer span.left{text-align: right;}}
+@media only screen and (min-width: 800px){footer span.right{text-align: left;}}
+@media only screen and (max-width: 799px){footer span.left, footer span.right{text-align: center;}}
+
+
+/* assessment.html */
+table#table-assessment th{color: #0ac876}
+button#btn-result{background-color: #28a745} 
+button#btn-result:hover{background-color: #28b745} 
+
+/* privacy-disclaimer */
+@media only screen and (min-width: 800px){.privacy{margin-bottom: 192px;}}

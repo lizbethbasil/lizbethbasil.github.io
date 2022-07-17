@@ -1,0 +1,300 @@
+/** Added from style.css **/
+#logo{text-align: center;}
+.space30{margin-bottom: 30px;}
+
+
+
+/** menu 1 **/
+#menu1{
+	text-align: center;
+	padding: 20px 0;
+}
+#menu1 ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+	font-weight: bold;
+}
+#menu1 ul li{
+    display:inline-block;
+    width: 300px;
+    height: 50px;
+    line-height: 30px;
+    opacity: 1;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+}
+#menu1 ul li a{
+    text-decoration: none;
+    color:#000;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#menu1 ul li.active a{
+	color:	#0ac876;
+}
+/** menu 1 **/
+/** Added from style.css **/
+#Menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#headlines1 li
+{
+   list-style: none;
+    margin: 0px;
+    padding: 0px; 
+}
+#headlines li
+{
+     list-style: none;
+    margin: 0px;
+    padding: 0px;
+    /* margin-left: 20px; */
+   
+}
+ #Menu ul li
+{
+   float: left;
+   width: 300px;
+   height: 50px;
+   line-height: 40px;
+   background-color:#34bf49;
+   opacity: 1;
+   font-size: 19px;
+   text-align: center;
+   margin-bottom: 1px;
+   margin-right: 2px;
+}
+ #Menu ul li a
+{
+    text-decoration: none;
+    color:#2e6da4;
+    display: block;
+}
+#introtable1
+{
+   /* width:960px; */
+   text-align:justify; 
+}
+#Menu
+{
+    margin-top: 20px;
+    
+}
+#slf1 , #slf2, #slf3, #slf4,#slf5,#slf6,#slf7,#slf8,#slf9,#slf10,#slf11,#slf12,#slf13,#slf14,#slf15,#slf16,#slf17,#slf18
+{
+    
+    width:160px;
+    /* padding: 5px 0; */
+    border-radius: 7px;   
+}
+.logo {
+	text-align:center;
+}
+.logo a i {
+    padding: 0 6px;
+}
+.logo p {
+    display: block;
+    color: #ececec;
+    line-height: 9px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+#table1 table tr td ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#table1 ul li a
+{
+   list-style: none;
+   text-decoration: none;
+    margin: 0px;
+    padding: 0px; 
+}
+#table1 ul
+{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+#selectv
+{
+    
+    text-align: center;
+}
+#home1 a
+{
+    list-style: none;
+   text-decoration: none;
+    margin: 0px;
+    padding: 0px; 
+    font-size: 150%;
+    color:#000;
+    font-weight:bold;
+}
+#fishindex a
+{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px; 
+    font-size: 150%;
+    color:#000;
+    font-weight:bold;
+}
+#fishindex a #Note1{
+    font-size: 14px;
+    display: inline;
+}
+#fishindex2
+{
+    list-style: none;
+   text-decoration: none;
+    margin: 0px;
+    padding: 0px; 
+    font-size: 150%;
+    color:#ac2925;
+    font-weight:bold;  
+}
+#head
+{
+    list-style: none;
+   text-decoration: none;
+    margin: 0px;
+    padding: 0px; 
+    font-size: 150%;
+    color:#0ac876;
+    font-weight:bold;
+    
+}
+#td1
+{
+   font-weight:bold;
+}
+
+
+
+
+
+
+
+
+/*-- contact --*/
+.contactleft h4 {
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 1px;
+}
+.contactleft i.fa {
+    color: #34bf49;
+    font-size: 25px;
+    margin-top: 1em;
+}
+.contact iframe {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 800px;
+}
+.contactleft p,.contactleft p a {
+    color: #525252;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+.agileits_agile_about_mail_left {
+    padding: 0;
+}
+.agileits_agile_about_mail_left input[type="text"], .agileits_agile_about_mail_left input[type="email"], .contactleft textarea {
+    outline: none;
+    border: 1px solid #646464;
+    padding: 13px;
+    font-size: 15px;
+    color: #000;
+    width: 96%;
+    margin-right: 22px;
+    float: left;
+}
+.contactleft input[type="email"], .contactleft input[type="text"]:nth-child(1) {
+    margin-bottom: 1em;
+}
+.contactleft textarea {
+    min-height: 180px;
+    width: 98% !important;
+    margin-bottom: 20px;
+}
+.contactform {
+    margin-top: 3em;
+}
+.contactform h4{
+    margin-bottom: .7em;
+}
+.contactform input[type="submit"] {
+    background: #efb312;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    text-transform: capitalize;
+}
+.contactform input[type="submit"]:hover {
+    background: #34bf49;
+}
+.contact{
+	padding:6em 0;
+}
+.footer{
+    padding: 1.5em 0;
+    margin-bottom: 0;
+    background: #212121;
+}
+.footernav {
+    text-align: left;
+}
+.copyright {
+    text-align: center;
+}
+.visits {
+	text-align: center;
+	color:#bbbbbb;
+	font-size: 14.5px;
+    letter-spacing: 1px;
+	font-weight:none;
+}
+
+.padding_top_50{padding-top:50px;}
+.copyright p {
+    color: #bbbbbb;
+    font-size: 14.5px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+	font-weight: normal;
+}
+.agileits-social ul li {
+    display: inline-block;
+}
+.agileits-social ul li a {
+    color: #BBBBBB;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 0 .5em;
+}
+.agileits-social ul li a:hover {
+    color: #fff;
+}
+.copyright p a {
+    color: #34bf49;
+}
+.copyright p a:hover {
+    color: #ffffff;
+}
+/*-- //contact --*/
