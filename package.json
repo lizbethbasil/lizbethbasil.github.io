@@ -14,6 +14,6 @@
   "scripts": {
     "start": "node ./app.js"
   },
-  "author": "aneesh Vishnudas",
+  "author": "lizbeth",
   "license": "ISC"
 }
