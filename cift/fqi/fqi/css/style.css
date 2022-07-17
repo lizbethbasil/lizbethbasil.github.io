@@ -1,0 +1,225 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+#logo{text-align: center;}
+.space30{margin-bottom: 30px;}
+.paddingtop10{padding-top:10px;}
+
+h3.title{
+    display: block; 	
+    font-size: 150%;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3.title span{color: #ac2925;}
+#menu{text-align: center;}
+
+#menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#menu ul li{
+    display:inline-block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background-color:#34bf49;
+    /*background-color:#058007;*/
+    opacity: 1;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:#2e6da4;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/** menu 1 **/
+#menu1{
+	text-align: center;
+	padding: 20px 0 40px;
+}
+#menu1 ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+	font-weight: bold;
+}
+#menu1 ul li{
+    display:inline-block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    opacity: 1;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+}
+#menu1 ul li a{
+    text-decoration: none;
+    color:#000;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#menu1 ul li.active a{
+	color:	#0ac876;
+}
+/** menu 1 **/
+#about{	
+    text-align: justify;
+    margin: 35px 0 232px 0;
+    color: #337ab7;
+    font-size: 15px;
+}
+#footer{
+    padding: 1.5em 0;
+    margin-bottom: 0;
+    background: #212121;
+    text-align: center;
+}
+.footernav{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.agileits-social ul li{
+    display: inline-block;
+}
+.agileits-social ul li a{
+    color: #bbbbbb;
+    /*font-size: 15px;*/
+    text-transform: capitalize;
+    margin: 0 0.75em;
+}
+.agileits-social ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright{
+    text-align: center;
+    padding: 0;
+}
+.copyright span{
+    color: #bbbbbb;
+    /*font-size: 14.5px;*/
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.copyright span a{
+    color: #34bf49;
+}
+.copyright span a:hover {
+    color: #ffffff;
+}
+
+.visits{
+    text-align: center;
+    color: #bbbbbb;
+    /*font-size: 14.5px;*/
+    letter-spacing: 1px;
+    font-weight: none;
+}
+
+/************ description.html ************/
+a.head{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0; 
+    font-size: 150%;
+    color: #000;
+    font-weight: bold;
+}
+.subhead{
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 0; 
+    font-size: 150%;
+    color:#0ac876;
+    font-weight: bold;
+
+}
+#content p{
+    text-align: justify;
+    color: #337ab7;
+}
+table .thead1{color: #0ac876;}
+table .thead2{color: #337ab7;}
+table tr td{
+    color: #337ab7;
+    text-align: justify;
+}	
+
+/************ valuepage.html ************/
+.subhead1{
+    text-align:center;
+    margin-top: 30px;
+}
+#content p{
+    text-align: justify;
+    color: #337ab7;
+}
+table .thead1{color: #0ac876;}
+table .thead2{color: #337ab7;}
+table tr td{
+    color: #337ab7;
+    text-align: justify;
+}
+
+/* .select{text-align: center;} */
+
+#slf1 , #slf2, #slf3, #slf4,#slf5,#slf6,#slf7,#slf8,#slf9,#slf10,#slf11,#slf12,#slf13,#slf14,#slf15,#slf16
+{
+    /* width:120px; */
+    padding: 5px 10px;
+    border-radius: 7px;  
+    text-align: center;
+} 
+ul.score{text-align: center;}
+.note{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0; 
+    font-size: 100%;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-success{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: 14px;
+}
+
+/**** Test Purpose - Fixed Footer ****/
+.row {
+	min-height:100%;
+	position:relative;
+}
+ html {
+ height: 100%; 
+}
+
+body {
+
+ 
+  padding-bottom: 30px;           
+}
+
+.footer {
+position:absolute;
+  background-color: blue;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
