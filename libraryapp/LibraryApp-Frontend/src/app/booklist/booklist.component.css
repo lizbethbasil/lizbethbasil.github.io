@@ -1,2 +1,2 @@
 .card-header{background-color: #E0AD7D;}
-button.btn{background-color: #E07A18; color: white;}
+button.btn-outline-orange{border: 1px solid #E07A18; color: #E07A18;}

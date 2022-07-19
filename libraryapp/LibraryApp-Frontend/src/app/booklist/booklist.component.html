@@ -1,4 +1,4 @@
-<div class="container py-4 px-5 my-0">
+<div class="container py-4 my-0">
     <div class="card-header">
         <p class="fs-4 my-0">{{title}}</p>
     </div>
@@ -14,6 +14,7 @@
                         <th>Author Name</th>
                         <th>Description</th>
                         <th>Rating</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,6 +28,10 @@
                         <td>{{i.authorName}}</td>
                         <td>{{i.description}}</td>
                         <td>{{i.rating}}</td>
+                        <td>
+                            <span class="mb-2"><button class="btn-sm btn-outline-orange">Edit</button></span>
+                            <span><button class="btn-sm  btn-outline-orange">Delete</button></span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
