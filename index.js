@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const Authordata = require("./src/model/AuthorData");
 const Bookdata = require("./src/model/BookData");
 
 // added
@@ -16,7 +17,36 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // API
+<<<<<<< HEAD:index.js
 app.get('/api/booklist', function (req, res) {
+=======
+app.get('/authorlist', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+    Authordata.find()
+        .then(function (authors) {
+            res.send(authors);
+        })
+});
+
+app.post('/newauthor', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+    console.log(req.body);
+    var author = {
+        authorName: req.body.item.authorName,
+        bestSeller: req.body.item.bestSeller,
+        rating: req.body.item.rating,
+        imageURL: req.body.item.imageURL
+    }
+
+    console.log("New Author Added");
+    var authors = new Authordata(author);
+    authors.save();
+})
+
+app.get('/booklist', function (req, res) {
+>>>>>>> parent of 81fe948 (updates):libraryapp/LibraryApp-Backend/index.js
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
     Bookdata.find()

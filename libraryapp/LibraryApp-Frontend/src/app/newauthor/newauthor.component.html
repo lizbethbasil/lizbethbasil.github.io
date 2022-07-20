@@ -1,0 +1,39 @@
+<div class="container py-4 px-5">
+    <div class="card">
+        <form (ngSubmit)="NewAuthor()">
+            <!-- Header -->
+            <div class="card-header">
+                <p class="fs-4 my-0">{{title}}</p>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Author Name</td>
+                                <td><input type="text" name="a_name" [(ngModel)]="newauthor.authorName"></td>
+                            </tr>
+                            <tr>
+                                <td>Best Seller</td>
+                                <td><input type="text" name="a_bestseller" [(ngModel)]="newauthor.bestseller"></td>
+                            </tr>
+                            <tr>
+                                <td>Rating</td>
+                                <td><input type="number" name="a_rating" [(ngModel)]="newauthor.rating"></td>
+                            </tr>
+                            <tr>
+                                <td>Image URL</td>
+                                <td><input type="text" name="a_image" [(ngModel)]="newauthor.imageURL"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="btn" type="submit" value="Submit"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
