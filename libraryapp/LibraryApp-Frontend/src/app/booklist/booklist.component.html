@@ -1,0 +1,40 @@
+<div class="container py-4 my-0">
+    <div class="card-header">
+        <p class="fs-4 my-0">{{title}}</p>
+    </div>
+    
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Show Images</th>
+                        <th>Book Code</th>
+                        <th>Book Name</th>
+                        <th>Author Name</th>
+                        <th>Description</th>
+                        <th>Rating</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data from the database should display here -->
+                    <tr *ngFor='let i of book'>
+                        <td><img [src]="i.imageURL" alt="image" [style.width.px]='imageWidth'
+                                [style.margin.px]='imageMargin'>
+                        </td>
+                        <td>{{i.bookCode}}</td>
+                        <td>{{i.bookName}}</td>
+                        <td>{{i.authorName}}</td>
+                        <td>{{i.description}}</td>
+                        <td>{{i.rating}}</td>
+                        <td>
+                            <span class="mb-2"><button class="btn-sm btn-outline-orange">Edit</button></span>
+                            <span><button class="btn-sm  btn-outline-orange">Delete</button></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>    
+</div>
